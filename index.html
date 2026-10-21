@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Informatyka Ekonomiczna</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайту (Flexbox) -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Portfolio</a>
+            <ul>
+                <li><a href="#o-mnie">O mnie</a></li>
+                <li><a href="#umiejetnosci">Umiejętności</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="info.html">Informacje</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Головний вміст -->
+    <main>
+        <!-- Sekcja Hero (wymagany dokładnie jeden h1) -->
+        <section class="hero">
+            <h1>Student Informatyki Ekonomicznej</h1>
+            <p>Łączę świat biznesu, ekonomii oraz nowoczesnych technologii i analizy danych.</p>
+        </section>
+
+        <!-- Sekcja 1: O mnie -->
+        <section id="o-mnie">
+            <h2>O mnie</h2>
+            <p>Jestem studentem kierunku Informatyka Ekonomiczna na Wydziale Ekonomiczno-Socjologicznym. Interesuję się bazami danych, programowaniem oraz optymalizacją procesów biznesowych za pomocą narzędzi IT.</p>
+        </section>
+
+        <!-- Sekcja 2: Umiejętności (tutaj zastosujemy CSS Grid) -->
+        <section id="umiejetnosci">
+            <h2>Moje umiejętności</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Bazy danych</h3>
+                    <p>Projektowanie baz danych, języki SQL, T-SQL oraz praca z MS SQL Server.</p>
+                </div>
+                <div class="card">
+                    <h3>Programowanie</h3>
+                    <p>Tworzenie aplikacji w językach C# (Windows Forms) oraz podstawy skryptów Python.</p>
+                </div>
+                <div class="card">
+                    <h3>Analiza danych</h3>
+                    <p>Wykorzystanie programu Microsoft Excel, tablic przestawnych oraz makr VBA.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja 3: FAQ / Pytania (z elementem interaktywnym - akordeon) -->
+        <section id="faq">
+            <h2>Najczęściej zadawane pytania</h2>
+            <div class="accordion">
+                <button type="button" class="accordion-btn">Jakie technologie poznaję na studiach?</button>
+                <div class="accordion-content">
+                    <p>Program obejmuje zarówno przedmioty ekonomiczne, jak i zaawansowane programowanie, inżynierię oprogramowania, bazy danych oraz analizę danych.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja 4: Kontakt (formularz z etykietami label for) -->
+        <section id="kontakt">
+            <h2>Napisz do mnie</h2>
+            <form id="contact-form" novalidate>
+                <div>
+                    <label for="name">Imię:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Adres E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Wyślij wiadomość</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2026 Portfolio Studenta. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
